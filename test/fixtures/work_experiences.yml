@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from: MyString
+  to: MyString
+  ongoing: false
+  position: MyString
+  employer_name: MyString
+  description: MyText
+
+two:
+  from: MyString
+  to: MyString
+  ongoing: false
+  position: MyString
+  employer_name: MyString
+  description: MyText

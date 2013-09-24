@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @education.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @education.to %>
+</p>
+
+<p>
+  <strong>Ongoing:</strong>
+  <%= @education.ongoing %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @education.title %>
+</p>
+
+<p>
+  <strong>Organization name:</strong>
+  <%= @education.organization_name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @education.level %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @education.description %>
+</p>
+
+<%= link_to 'Edit', edit_education_path(@education) %> |
+<%= link_to 'Back', educations_path %>

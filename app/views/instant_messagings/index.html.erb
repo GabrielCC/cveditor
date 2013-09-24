@@ -1,0 +1,29 @@
+<h1>Listing instant_messagings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Address</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instant_messagings.each do |instant_messaging| %>
+      <tr>
+        <td><%= instant_messaging.type %></td>
+        <td><%= instant_messaging.address %></td>
+        <td><%= link_to 'Show', instant_messaging %></td>
+        <td><%= link_to 'Edit', edit_instant_messaging_path(instant_messaging) %></td>
+        <td><%= link_to 'Destroy', instant_messaging, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Instant messaging', new_instant_messaging_path %>

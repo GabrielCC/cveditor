@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @instant_messaging.type %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @instant_messaging.address %>
+</p>
+
+<%= link_to 'Edit', edit_instant_messaging_path(@instant_messaging) %> |
+<%= link_to 'Back', instant_messagings_path %>

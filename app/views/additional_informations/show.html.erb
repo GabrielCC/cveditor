@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @additional_information.type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @additional_information.description %>
+</p>
+
+<%= link_to 'Edit', edit_additional_information_path(@additional_information) %> |
+<%= link_to 'Back', additional_informations_path %>

@@ -1,0 +1,37 @@
+<h1>Listing work_experiences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Ongoing</th>
+      <th>Position</th>
+      <th>Employer name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @work_experiences.each do |work_experience| %>
+      <tr>
+        <td><%= work_experience.from %></td>
+        <td><%= work_experience.to %></td>
+        <td><%= work_experience.ongoing %></td>
+        <td><%= work_experience.position %></td>
+        <td><%= work_experience.employer_name %></td>
+        <td><%= work_experience.description %></td>
+        <td><%= link_to 'Show', work_experience %></td>
+        <td><%= link_to 'Edit', edit_work_experience_path(work_experience) %></td>
+        <td><%= link_to 'Destroy', work_experience, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Work experience', new_work_experience_path %>

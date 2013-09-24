@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from: 2013-09-24
+  to: 2013-09-24
+  ongoing: false
+  title: MyString
+  organization_name: MyString
+  level: MyString
+  description: MyText
+
+two:
+  from: 2013-09-24
+  to: 2013-09-24
+  ongoing: false
+  title: MyString
+  organization_name: MyString
+  level: MyString
+  description: MyText
